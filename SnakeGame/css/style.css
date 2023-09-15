@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../wp4578344.webp");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scorediv{
+    border: 2px solid black;
+    background: linear-gradient(orange,yellow);
+    position: absolute;
+    padding: 5px 20px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    font-size: 39px;
+    font-weight: bold;
+    top: 9px;
+    right: 200px;
+}
+
+#maxscorediv{
+    border: 2px solid black;
+    background: linear-gradient(orange,yellow);
+    position: absolute;
+    padding: 5px 20px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    font-size: 39px;
+    font-weight: bold;
+    top: 79px;
+    right: 115px;
+}
+
+#board{
+    background: linear-gradient(rgb(171, 241, 171),rgb(242, 242, 164));
+    height: 92vmin;
+    width: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    border-radius: 9px;
+    transform: scale(1.02);
+}
+
+.snakebody{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
